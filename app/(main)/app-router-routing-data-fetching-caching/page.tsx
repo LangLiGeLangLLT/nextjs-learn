@@ -10,7 +10,10 @@ export default async function Page() {
   return (
     <div>
       <div className="text-xl font-bold">
-        <Link href="/app-router-routing-data-fetching-caching/about">
+        <Link
+          className="underline"
+          href="/app-router-routing-data-fetching-caching/about"
+        >
           About
         </Link>
       </div>

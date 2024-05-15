@@ -10,7 +10,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
     <main className="container">
       <div className="flex flex-col space-y-4">
         <div>
-          <button onClick={() => router.back()} className="font-bold text-2xl">
+          <button onClick={() => router.back()} className="font-bold text-2xl underline">
             Back
           </button>
         </div>
