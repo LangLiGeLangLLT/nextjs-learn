@@ -1,4 +1,7 @@
+'use client'
+
 import { Button } from '@/components/ui/button'
+import { delay } from 'lodash'
 import React from 'react'
 
 export default function Page() {
@@ -70,10 +73,24 @@ function Card({
   children: React.ReactNode
   title: string
 }) {
+  const [isShow, setIsShow] = React.useState(true)
+
+  function handleReload() {
+    setIsShow(false)
+    delay(() => {
+      setIsShow(true)
+    }, 100)
+  }
+
   return (
     <div className="flex flex-col space-y-8">
-      <h2 className="text-xl font-bold">{title}</h2>
-      <div className="space-x-4">{children}</div>
+      <h2 className="text-xl font-bold">
+        {title}
+        <Button variant="link" onClick={handleReload}>
+          Reload
+        </Button>
+      </h2>
+      <div className="space-x-4 h-12">{isShow && <>{children}</>}</div>
     </div>
   )
 }
