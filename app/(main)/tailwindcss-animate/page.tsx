@@ -62,6 +62,55 @@ export default function Page() {
         <Button className="animate-in slide-in-from-top">Button</Button>
         <Button className="animate-in slide-in-from-left">Button</Button>
       </Card>
+      <Card title="Adding exit animations">
+        <Button className="animate-out fade-out">Button</Button>
+        <Button className="animate-out spin-out">Button</Button>
+        <Button className="animate-out zoom-out">Button</Button>
+        <Button className="animate-out slide-out-to-top">Button</Button>
+        <Button className="animate-out slide-out-to-left">Button</Button>
+      </Card>
+      <Card title="Changing enter animation starting opacity">
+        <Button className="animate-in fade-in">Button</Button>
+        <Button className="animate-in fade-in-25">Button</Button>
+        <Button className="animate-in fade-in-50">Button</Button>
+        <Button className="animate-in fade-in-70">Button</Button>
+      </Card>
+      <Card title="Changing enter animation starting rotation">
+        <Button className="animate-in spin-in-1">Button</Button>
+        <Button className="animate-in spin-in-6">Button</Button>
+        <Button className="animate-in spin-in-[75deg]">Button</Button>
+        <Button className="animate-in spin-in-[95deg]">Button</Button>
+      </Card>
+      <Card title="Changing enter animation starting translate">
+        <Button className="animate-in slide-in-from-top">Button</Button>
+        <Button className="animate-in slide-in-from-bottom-48">Button</Button>
+        <Button className="animate-in slide-in-from-left-72">Button</Button>
+        <Button className="animate-in slide-in-from-right-96">Button</Button>
+      </Card>
+      <Card title="Changing exit animation ending opacity">
+        <Button className="animate-out fade-out">Button</Button>
+        <Button className="animate-out fade-out-25">Button</Button>
+        <Button className="animate-out fade-out-50">Button</Button>
+        <Button className="animate-out fade-out-75">Button</Button>
+      </Card>
+      <Card title="Changing exit animation ending rotation">
+        <Button className="animate-out spin-out-1">Button</Button>
+        <Button className="animate-out spin-out-6">Button</Button>
+        <Button className="animate-out spin-out-[75deg]">Button</Button>
+        <Button className="animate-out spin-out-[90deg]">Button</Button>
+      </Card>
+      <Card title="Changing exit animation ending scale">
+        <Button className="animate-out zoom-out">Button</Button>
+        <Button className="animate-out zoom-out-50">Button</Button>
+        <Button className="animate-out zoom-out-75">Button</Button>
+        <Button className="animate-out zoom-out-90">Button</Button>
+      </Card>
+      <Card title="Changing exit animation ending translate">
+        <Button className="animate-out slide-out-to-top">Button</Button>
+        <Button className="animate-out slide-out-to-bottom-48">Button</Button>
+        <Button className="animate-out slide-out-to-left-72">Button</Button>
+        <Button className="animate-out slide-out-to-right-96">Button</Button>
+      </Card>
     </div>
   )
 }
